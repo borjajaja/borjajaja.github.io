@@ -1,0 +1,859 @@
+/* ==== styles.css ==== */
+/* estilo del encabezado*/
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora', sans-serif, bold;
+    line-height: 1.6;
+    color: #fff;
+    background: #eee url(images/background.png) no-repeat center / cover;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.4);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+ /*PRESENTACION*/
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-weight: bold;
+    font-family: "Sora", serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+}
+
+.hero h2 {
+    font-size: 64px;
+    font-style: italic;    
+    font-family: "Brygada 1918", serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: italic;
+}
+
+.hero p {
+    font-size: 18px;
+    font-family: "SF Pro Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    color: #fff;
+    justify-content: center;
+    padding: 10px 20px;
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    border-style: solid;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+
+/* ==== sobremistyles.css ==== */
+/* estilo del encabezado*/
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora', sans-serif, bold;
+    line-height: 1.6;
+    color: #fff;
+    background: #eee url(sobremi/fondo_sobre_mi.jpg) no-repeat center / cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.4);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+/*portada sobre mi*/
+
+.sobremi {
+    background-size: cover;
+    background-position: center;
+    background-color: #121212;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobremi div h1 {
+    font-size: 90px;
+    font-weight: bold;
+    background: url('sobremi/fondo_sobre_mi.jpg');
+    background-position: center -250px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 1000;
+    font-size: 172px;
+}
+
+/*PRESENTACION Y CV*/
+
+.hero-container {
+    background: url(sobremi/fondo_sobre_mi.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: black;
+    
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-family: "Poppins", sans-serif, bold;
+}
+
+.hero span {
+    font-size: 50px;
+    font-style: italic;
+    font-family: "Brygada 1918", serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: italic;
+}
+
+/*quien soy*/
+
+.quiensoy {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.quiensoy div {
+    width: 90%;
+    margin: 0 10px;
+}
+
+.quiensoy h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Sora", sans-serif, bold;
+    margin-bottom: 20px;
+}
+
+.quiensoy p {
+    font-size: 24px;
+    line-height: 1.6;
+    font-family: "SF Pro Display", sans-serif, bold;
+}
+
+.quiensoy h1 {
+    font-size: 36px;
+    font-weight: bold; 
+    font-family: "SF Pro Display", sans-serif, bold;
+}
+
+
+/*herramientas*/
+
+.herramientas {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    color: black;
+}
+.herramientas h1 {
+    font-size: 36px;
+    font-weight: bold; 
+    font-family: "SF Pro Display", sans-serif, bold;
+    transform: translate(-0%, 0%);
+}
+.herramientas div {
+    width: 90%;
+    margin: 0 10px;
+}
+
+.herramientas-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 0px 100px;
+}
+
+.skills span {
+    display: block;
+    width: 200px;    
+    height: 3px;    
+    background-color: black; 
+    margin: 10% 0;
+}
+
+.iconoytexto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.figmaballs {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    padding: 50px 50px;
+}
+
+.iconoytexto img {
+    margin-right: 20px;
+} 
+
+/*formacion*/
+
+.formacion {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    color: black;
+}
+
+.formacion div {
+    width: 90%;
+    margin: 0 10px;
+}
+
+.universidad h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "SF Pro Display", sans-serif, medium;
+    margin-bottom: 20px;
+}
+
+.universidad p {
+    font-size: 24px;
+    line-height: 1.6;
+    font-family: "SF Pro Display", sans-serif, normal;
+}
+
+.universidad h1 {
+    font-size: 36px;
+    font-weight: bold; 
+    font-family: "SF Pro Display", sans-serif, bold;
+}
+
+.universidad span {
+    display: block;
+    width: 700px;    
+    height: 3px;    
+    background-color: black; 
+    margin: 3% 0;
+}
+
+/*boton*/
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.button {
+    display: inline-block;
+    color: black;
+    justify-content: center;
+    padding: 10px 20px;
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    border-style: solid;
+    transition: background-color 0.3s;
+    margin: 15px;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+/* ==== stylesproyectos.css ==== */
+/* estilo del encabezado*/
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora', sans-serif, bold;
+    line-height: 1.6;
+    color: #fff;
+    background: #121212;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.4);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+/*ultimo proyectos*/
+
+.proyectos {
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido {
+    text-align: center;
+}
+
+.proyectos div h1 {
+    font-size: 90px;
+    font-weight: bold;
+    background: url('images/background.png');
+    background-position: center -250px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 172px;
+    text-align: center;
+}
+
+/*texto*/
+.contenidoeladio {
+    text-align: center;
+    color: lightgray;
+}
+
+.tituloeladio {
+    font-weight: bold;
+    font-family: "Sora" sans-serif;
+    font-size: 40px;
+}
+
+.textoeladio {
+    font-weight: normal;
+    font-family: "SF Pro Display" sans-serif;
+    font-size: 20px;
+}
+
+/*montage eladio*/
+.imageneladio1 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: #ccc;
+    margin-top: 100px;
+    max-width: fit-content;
+    position: relative;
+}
+
+.discoeladio {
+    height: 488px;
+    width: 950px;
+}
+
+.tituloeladio2 {
+    font-weight: bold;
+    font-family: "Sora" sans-serif;
+    font-size: 16px;
+}
+
+.textoeladio2 {
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 120;
+    width: 350px;
+}
+
+.textoimageneladio {
+    margin-top: 600px;
+    position: absolute;
+    left: 50%;
+    transform: translate(36%, -250%);
+}
+
+/*montage eladio2*/
+
+.eladioydisco {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.imageneladio2 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    color: #ccc;
+    margin-top: 100px;
+    max-width: fit-content;
+    position: relative;
+}
+
+.discoeladio2 {
+    height: 484px;
+    width: 635px;
+}
+
+.tituloeladio3 {
+    font-weight: bold;
+    font-family: "Sora" sans-serif;
+    font-size: 16px;
+}
+
+.textoeladio3 {
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 120;
+    width: 350px;
+}
+
+.textoimageneladio2 {
+    margin-top: 600px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-80%, -250%);
+}
+
+.eladiofoto {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: #ccc;
+    margin-top: 100px;
+    max-width: fit-content;
+    position: relative;
+}
+
+.discoeladio3 {
+    height: 484px;
+    width: 301px;
+}
+
+.tituloeladio4 {
+    font-weight: bold;
+    font-family: "Sora" sans-serif;
+    font-size: 16px;
+}
+
+.textoeladio4 {
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 120;
+    width: 250px;
+}
+
+.textoimageneladio3 {
+    margin-top: 600px;
+    position: absolute;
+    left: 43%;
+    transform: translate(-42%, -500%);
+}
+
+.amarilloyazul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.amarillo {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    color: #ccc;
+    margin-top: 100px;
+    max-width: fit-content;
+    position: relative;
+}
+
+.imagenamarillo {
+    height: 484px;
+    width: 301px;
+}
+
+.tituloamarillo {
+    font-weight: bold;
+    font-family: "Sora" sans-serif;
+    font-size: 16px;
+}
+
+.textoamarillo {
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 120;
+    width: 250px;
+}
+
+.textoimagenamarillo {
+    margin-top: 600px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -245%);
+}
+
+.azul {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: #ccc;
+    margin-top: 100px;
+    max-width: fit-content;
+    position: relative;
+}
+
+.imagenazul {
+    height: 484px;
+    width: 636px;
+}
+
+.tituloazul {
+    font-weight: bold;
+    font-family: "Sora" sans-serif;
+    font-size: 16px;
+}
+
+.textoazul {
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 120;
+    width: 400px;
+}
+
+.textoimagenazul {
+    margin-top: 600px;
+    position: absolute;
+    left: 75%;
+    transform: translate(-60%, -300%);
+}
+
+/*TODOS MIS PROYECTOS*/
+
+.todosmisproyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.todosmisproyectos-content {
+    max-width: 700px;
+}
+
+
+.button {
+    display: inline-block;
+    color: #fff;
+    justify-content: center;
+    padding: 10px 20px;
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    border-style: solid;
+    transition: background-color 0.3s;
+    margin: 50px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+/* ==== stylescontacto.css ==== */
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora', sans-serif, bold;
+    line-height: 1.6;
+    color: #fff;
+    background: #eee url(images/background.png) no-repeat center / cover;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.4);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+/* Sección hero */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-family: "Poppins", sans-serif, bold;
+}
+
+.hero span {
+    font-size: 50px;
+    font-style: italic;    
+    font-family: "Brygada 1918", serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: italic;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    background: #d8c3b1;
+    color: #4e3d36;
+}
+
+/* Formulario */
+.form-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.form-section p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "SF Pro Display", sans-serif;
+    font-style: bold;
+}
+.form-section p span{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "Brygada 1918", serif;
+    font-style: italic;
+}
+
+.form-section a {
+    color: #ffffff;
+}
+
+.form-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    font-family: "Sora", sans-serif;
+    resize: none;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #ffffff;
+    font-family: "Sora", sans-serif, bold;
+    
+}
+
+form button {
+    display: inline-block;
+    color: #fff;
+    justify-content: center;
+    padding: 10px 20px;
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    border-style: solid;
+    transition: background-color 0.3s;
+    background-color: transparent;
+    border-color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
